@@ -64,7 +64,7 @@
 <section class="hero" id="top">
   <div class="steam-field" id="steamField" aria-hidden="true"></div>
   <div class="container hero-inner">
-    <span class="hero-badge"><span class="dot"></span>শীঘ্রই আসছে</span>
+    <span class="hero-badge"><span class="dot"></span>খুলে গেছে আমাদের দরজা</span>
 
     <img class="hero-logo" src="assets/peala-logo.png" alt="পেয়ালা — Peala Tea House-এর লোগো, একটি চাঁদ আর ধোঁয়া ওঠা চায়ের কাপ, খিলান আকৃতির দরজার নিচে">
 
@@ -72,16 +72,69 @@
     <p class="hero-tagline-en">অল্প কিছু চা রাখছি আমরা, কিন্তু প্রতিটাই বানাই খাঁটি উপকরণে, পুরো যত্ন নিয়ে।</p>
 
     <div class="hero-actions">
-      <a class="btn btn-primary" href="#connect">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12h16M13 5l7 7-7 7"/></svg>
-        আমাদের সাথে যুক্ত হোন
+      <a class="btn btn-primary" href="#visit">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.5 7-11.5a7 7 0 1 0-14 0C5 14.5 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.3"/></svg>
+        আমাদের ঠিকানা
       </a>
-      <a class="btn btn-ghost" href="#teas">চায়ের তালিকা দেখুন</a>
+      <a class="btn btn-ghost" href="#teas">চায়ের তালিকা</a>
     </div>
   </div>
 </section>
 
 <main>
+
+  <!-- ============================= VISIT (location & hours) ============================= -->
+  <section class="section" id="visit">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">কোথায় পাবেন</span>
+        <h2 class="section-title-bn bn">আমাদের ঠিকানা ও সময়</h2>
+      </div>
+
+      <div class="visit-grid">
+        <div class="visit-card map-card reveal">
+          <div class="map-embed">
+            <iframe
+              src="https://www.google.com/maps?q=Peala%2C+192-B+North%2C+Rajshahi+6000&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="গুগল ম্যাপে পেয়ালার অবস্থান">
+            </iframe>
+          </div>
+          <div class="visit-card-body">
+            <p class="visit-address bn">মহিলা কলেজ রোড, কাদিরগঞ্জ, বোয়ালিয়া, রাজশাহী – ৬০০০</p>
+            <p class="visit-address-note">শহীদ নজমুল হক বালিকা উচ্চ বিদ্যালয়ের বাম পার্শ্বের রাস্তা</p>
+            <a class="btn btn-primary btn-block" href="https://maps.app.goo.gl/nxWePushG2V6BcWUA" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.5 7-11.5a7 7 0 1 0-14 0C5 14.5 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.3"/></svg>
+              গুগল ম্যাপে দেখুন
+            </a>
+          </div>
+        </div>
+
+        <div class="visit-card hours-card reveal">
+          <div class="hours-head">
+            <div class="arch-frame gold" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12.5" r="8"/><path d="M12 8v4.5l3 2"/></svg>
+            </div>
+            <div>
+              <p class="hours-title bn">খোলার সময়</p>
+              <p class="hours-sub">প্রতিদিন বিকেল ৩টা থেকে রাত ৯:৩০ পর্যন্ত</p>
+            </div>
+          </div>
+          <span class="hours-status" id="hoursStatus"><span class="dot"></span><span id="hoursStatusText">লোড হচ্ছে…</span></span>
+          <ul class="hours-list" id="hoursList">
+            <li data-day="0"><span class="day-name bn">রবিবার</span><span class="day-time">বিকেল ৩:০০ – রাত ৯:৩০</span></li>
+            <li data-day="1"><span class="day-name bn">সোমবার</span><span class="day-time">বিকেল ৩:০০ – রাত ৯:৩০</span></li>
+            <li data-day="2"><span class="day-name bn">মঙ্গলবার</span><span class="day-time">বিকেল ৩:০০ – রাত ৯:৩০</span></li>
+            <li data-day="3"><span class="day-name bn">বুধবার</span><span class="day-time">বিকেল ৩:০০ – রাত ৯:৩০</span></li>
+            <li data-day="4"><span class="day-name bn">বৃহস্পতিবার</span><span class="day-time">বিকেল ৩:০০ – রাত ৯:৩০</span></li>
+            <li data-day="5"><span class="day-name bn">শুক্রবার</span><span class="day-time">বিকেল ৩:০০ – রাত ৯:৩০</span></li>
+            <li data-day="6"><span class="day-name bn">শনিবার</span><span class="day-time">বিকেল ৩:০০ – রাত ৯:৩০</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- ============================= STORY ============================= -->
   <section class="section" id="story">
@@ -306,7 +359,7 @@
           <div class="social-copy">
             <p class="social-name">Facebook</p>
             <p class="social-sub">ছবি, খবর আর অফারের আপডেট পাবেন এখানে।</p>
-            <p class="social-handle">/pealacafe</p>
+            <p class="social-handle">/PealaCafe</p>
           </div>
           <span class="social-go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
         </a>
@@ -318,7 +371,7 @@
           <div class="social-copy">
             <p class="social-name">Instagram</p>
             <p class="social-sub">দোকানের নেপথ্যের মুহূর্তগুলো দেখতে পাবেন এখানে।</p>
-            <p class="social-handle">@pealacafe</p>
+            <p class="social-handle">@PealaCafe</p>
           </div>
           <span class="social-go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
         </a>
@@ -343,7 +396,7 @@
 <!-- ============================= FOOTER ============================= -->
 <footer class="site-footer">
   <div class="container footer-inner">
-    <img src="assets/peala-logo.png" alt="" aria-hidden="true" style="width:56px;">
+    <img src="assets/peala-logo.png" alt="" aria-hidden="true" style="width:38px;">
     <p class="footer-word bn">পেয়ালা</p>
     <p class="footer-tag bn">এক কাপ চা, একটুখানি শান্তি</p>
     <nav class="footer-social" aria-label="Social media">
@@ -357,7 +410,7 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.2" y="6.5" width="17.6" height="11" rx="3.2"/><path d="M10.5 9.7 14.7 12l-4.2 2.3Z" fill="currentColor" stroke="none"/></svg>
       </a>
     </nav>
-    <p class="footer-copy">© <span id="year">2026</span> Peala Tea House · পেয়ালা</p>
+    <p class="footer-copy">© Peala · পেয়ালা · <span id="year">2026</span></p>
   </div>
 </footer>
 
