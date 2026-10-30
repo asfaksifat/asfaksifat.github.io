@@ -6,6 +6,33 @@
 
   document.getElementById("year").textContent = new Date().getFullYear();
 
+  // --- Store hours: open every day, 3:00 PM – 9:30 PM (local device time) --
+  (function () {
+    var list = document.getElementById("hoursList");
+    var statusEl = document.getElementById("hoursStatus");
+    var statusText = document.getElementById("hoursStatusText");
+    if (!list || !statusEl) return;
+
+    var now = new Date();
+    var day = now.getDay();
+    var minutesNow = now.getHours() * 60 + now.getMinutes();
+    var openAt = 15 * 60;        // 3:00 PM
+    var closeAt = 21 * 60 + 30;  // 9:30 PM
+
+    var todayItem = list.querySelector('li[data-day="' + day + '"]');
+    if (todayItem) todayItem.classList.add("is-today");
+
+    var isOpen = minutesNow >= openAt && minutesNow < closeAt;
+    statusEl.classList.add(isOpen ? "is-open" : "is-closed");
+    if (isOpen) {
+      statusText.textContent = "এখন খোলা আছে";
+    } else if (minutesNow < openAt) {
+      statusText.textContent = "আজ বিকেল ৩টায় খুলবে";
+    } else {
+      statusText.textContent = "আজকের মতো বন্ধ · কাল বিকেল ৩টায় খুলবে";
+    }
+  })();
+
   // --- Scroll reveal -------------------------------------------------
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var revealEls = document.querySelectorAll(".reveal");
