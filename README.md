@@ -37,7 +37,7 @@ be served as-is.
   ম্যাপে দেখুন" button's `href`.
 - **Hours** — same `#visit` section, the `<ul class="hours-list">` block.
   The open/closed badge and "today" highlight are computed automatically in
-  `js/main.js` (look for `openAt` / `closeAt`, currently 3:00 PM–9:30 PM) —
+  `js/main.js` (look for `openAt` / `closeAt`, currently 3:30 PM–10:30 PM) —
   change those two values if hours ever change.
 - **Social links** live in three places: the top bar, the "অনলাইনে আমাদের
   খুঁজুন" section, and the footer. Search `index.html` for `pealacafe` and

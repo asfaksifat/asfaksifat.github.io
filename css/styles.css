@@ -536,6 +536,7 @@ h1, h2, h3, p { margin: 0; }
   color: var(--ink);
   font-weight: 700;
 }
+.hours-note a { color: var(--gold-deep); font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }
 .hours-note {
   margin-top: 0.9rem;
   font-size: 0.78rem;
@@ -886,7 +887,7 @@ h1, h2, h3, p { margin: 0; }
    Tablet & desktop
    ============================================================ */
 @media (min-width: 640px) {
-  .tea-grid { grid-template-columns: repeat(4, 1fr); }
+  .tea-grid { grid-template-columns: repeat(3, 1fr); }
   .promise-list { grid-template-columns: 1fr 1fr; column-gap: 2rem; }
   .promise-item { border-bottom: 1px solid rgba(251,245,232,0.12) !important; padding-bottom: 1.1rem !important; }
   .promise-item:nth-last-child(-n+2) { border-bottom: none !important; padding-bottom: 0 !important; }
